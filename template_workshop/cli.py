@@ -8,7 +8,8 @@ Be creative! do whatever you want!
 - Import things from your .base module
 """
 ##### YOUR CODE HERE #####
-
+import sys
+from template_workshop import Fibonacci
 ##########################
 
 def main():  # pragma: no cover
@@ -28,5 +29,5 @@ def main():  # pragma: no cover
         * Run an application (Flask, FastAPI, Django, etc.)
     """
     ##### YOUR CODE HERE #####
-    print("This will do something")
+    print(Fibonacci().fib(int(sys.argv[1])))
     ##########################
